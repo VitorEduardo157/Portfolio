@@ -1,20 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meu Portfólio</title>
-
-    <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-
-    <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
-    <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
@@ -50,7 +42,6 @@
 
 <body>
 
-    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#">Meu Portfólio</a>
@@ -66,22 +57,23 @@
             </div>
         </div>
     </nav>
-    <!-- HERO -->
+    
     <header class="text-center" id="home">
         <div class="container">
             <h1 class="hero-title animate__animated animate__fadeInDown">
-                Olá, eu sou o Vitor ✌️
+                Vitor Eduardo Andrade Santos
             </h1>
             <p class="hero-subtitle animate__animated animate__fadeInUp animate__delay-1s">
-                Desenvolvedor Front-end • Criativo • Apaixonado por tecnologia
+                Desenvolvedor Front-end
             </p>
-            <a href="#projetos" class="btn btn-dark btn-lg mt-4 animate__animated animate__fadeInUp animate__delay-2s">
-                Ver Projetos
+            <a href="curriculo-vitor.pdf" download 
+            class="btn btn-primary btn-lg mt-4 animate__animated animate__fadeInUp animate__delay-2s d-inline-flex align-items-center gap-2">
+                <i class="bi bi-download"></i> Baixar Currículo
             </a>
+
         </div>
     </header>
 
-    <!-- SOBRE -->
     <section id="sobre" class="py-5 bg-light">
         <div class="container">
             <div class="row align-items-center">
@@ -89,13 +81,22 @@
                 <div class="col-md-6" data-aos="fade-right">
                     <h2 class="fw-bold mb-3">Sobre mim</h2>
                     <p>
-                        Sou um desenvolvedor apaixonado por criar interfaces modernas,
-                        páginas rápidas e experiências digitais elegantes.
+                        Sou um profissional iniciando minha jornada como Desenvolvedor Front-End Júnior. Embora minha experiência seja baseada em projetos pessoais, possuo uma base sólida em todo o ecossistema fundamental de desenvolvimento web. Atualmente focado em aprofundar meus conhecimentos em todo o stack front-end, com o objetivo de, futuramente, evoluir para a área Full Stack. Meu objetivo Busco minha primeira oportunidade profissional para aplicar meus conhecimentos em um ambiente real, transformar meu potencial em resultados concretos e iniciar minha trilha de crescimento em uma empresa inovadora.Sou proficiente em HTML, CSS e JavaScript, com experiência prática no desenvolvimento de interfaces dinâmicas e design responsivo para garantir a melhor experiência do usuário em qualquer dispositivo.<br>
+
+                        <strong>Foco e Habilidades Técnicas:</strong><br>
+                        <strong>Fundamentos:</strong> HTML5, CSS3, JavaScript (ES6+).<br>
+
+                        <strong>Frameworks:</strong> Conhecimento inicial em React e estudos ativos em TypeScript, visando a construção de aplicações escaláveis e com tipagem segura.<br>
+
+                        <strong>Design:</strong> Habilidade básica de utilização do Figma para transformar designs em código de alta fidelidade.<br>
+
+                        <strong>Habilidades Interpessoais:</strong>
+                        Aprendizado Rápido, trabalho em Equipe, solução de Problemas, Adaptabilidade.
                     </p>
                 </div>
 
                 <div class="col-md-6 text-center" data-aos="fade-left">
-                    <img src="https://via.placeholder.com/350"
+                    <img src="img/avatar.png"
                         class="img-fluid rounded shadow" alt="Foto">
                 </div>
 
@@ -103,7 +104,6 @@
         </div>
     </section>
 
-    <!-- PROJETOS -->
     <section id="projetos" class="py-5">
         <div class="container">
             <h2 class="fw-bold text-center mb-5" data-aos="fade-up">Meus Projetos</h2>
@@ -115,7 +115,7 @@
                         <img src="https://via.placeholder.com/600x300" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title fw-bold">Projeto 1</h5>
-                            <p class="card-text">Descrição curta sobre o projeto.</p>
+                            <p class="card-text">Descrição do projeto.</p>
                             <a href="#" class="btn btn-dark">Ver mais</a>
                         </div>
                     </div>
@@ -126,7 +126,7 @@
                         <img src="https://via.placeholder.com/600x300" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title fw-bold">Projeto 2</h5>
-                            <p class="card-text">Outro projeto interessante.</p>
+                            <p class="card-text">Descrição do projeto.</p>
                             <a href="#" class="btn btn-dark">Ver mais</a>
                         </div>
                     </div>
@@ -137,7 +137,7 @@
                         <img src="https://via.placeholder.com/600x300" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title fw-bold">Projeto 3</h5>
-                            <p class="card-text">Mais um projeto legal.</p>
+                            <p class="card-text">Descrição do projeto.</p>
                             <a href="#" class="btn btn-dark">Ver mais</a>
                         </div>
                     </div>
@@ -147,30 +147,25 @@
         </div>
     </section>
 
-    <!-- CONTATO -->
     <section id="contato" class="py-5 bg-light">
         <div class="container text-center">
             <h2 class="fw-bold mb-4" data-aos="fade-up">Contato</h2>
 
-            <p class="mb-4">Me encontre nas redes:</p>
-
-            <a href="#" class="mx-3 fs-2 text-dark"><i class="bi bi-github"></i></a>
-            <a href="#" class="mx-3 fs-2 text-primary"><i class="bi bi-linkedin"></i></a>
-            <a href="#" class="mx-3 fs-2 text-danger"><i class="bi bi-envelope-fill"></i></a>
+            <a href="https://github.com/VitorEduardo157" class="mx-3 fs-2 text-dark"><i class="bi bi-github"></i></a>
+            <a href="https://linkedin.com/in/vitor-eduardo-andrade-santos-083a39275/?skipRedirect=true" class="mx-3 fs-2 text-primary"><i class="bi bi-linkedin"></i></a>
+            <a href="mailto:vitoreduardo7905473@gmail.com" class="email-link"><i class="bi bi-envelope-fill me-2"></i> </a>
 
         </div>
     </section>
 
-    <!-- FOOTER -->
     <footer class="text-center">
         © 2025 - Feito por Vitor
     </footer>
 
-    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
-    <script src="theme.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
