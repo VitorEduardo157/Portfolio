@@ -1,0 +1,72 @@
+/* ===========================
+   TEMA PADRÃO (CLARO)
+=========================== */
+:root {
+    --bg: #ffffff;
+    --text: #111111;
+    --subtext: #444;
+    --card: #f7f7f7;
+    --header-bg: rgba(255, 255, 255, 0.7);
+    --btn-bg: #0d6efd;
+    --btn-text: #ffffff;
+}
+
+/* ===========================
+   TEMA ESCURO
+=========================== */
+body.dark {
+    --bg: #0e0e0e;
+    --text: #f1f1f1;
+    --subtext: #bbbbbb;
+    --card: #1a1a1a;
+    --header-bg: rgba(20, 20, 20, 0.7);
+    --btn-bg: #4b7bec;
+    --btn-text: #ffffff;
+}
+
+/* ===========================
+   ESTILO GLOBAL
+=========================== */
+body {
+    background: var(--bg);
+    color: var(--text);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+section, header, nav, footer {
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* HEADER */
+.navbar,
+.main-header {
+    background: var(--header-bg) !important;
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    transition: 0.3s;
+}
+
+.nav-link, a.nav-link {
+    color: var(--text) !important;
+}
+
+.nav-link:hover {
+    opacity: .7;
+}
+
+/* HERO */
+header, .hero {
+    background: var(--bg);
+    color: var(--text);
+}
+
+.hero .hero-subtitle {
+    color: var(--subtext);
+}
+
+/* CARDS */
+.card {
+    background: var(--card) !important;
+    color: var(--text) !important;
+    transition: 0.3s;
+}
